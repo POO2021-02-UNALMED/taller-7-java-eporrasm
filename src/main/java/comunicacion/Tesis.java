@@ -24,7 +24,7 @@ public class Tesis extends Escrito {
 	}
 
 	@Override
-	String interpretacion() {
+	public String interpretacion() {
 		return interpretacion;
 	}
 
