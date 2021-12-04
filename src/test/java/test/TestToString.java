@@ -32,11 +32,10 @@ public class TestToString {
    	public void testAlfabeto(){
 		String  comp = "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z";
 		boolean ok = false;
-		System.out.println(alfabeto.toString());
 		if (alfabeto.toString().equals(comp)) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema en el metodo toString de la clase Alfabeto");
+		assertTrue(ok, "Hay un problema en el metodo toString de la clase Alfabeto" + alfabeto.toString());
     }
 	
 	@Test
