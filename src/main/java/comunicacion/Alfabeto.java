@@ -5,8 +5,9 @@ import java.util.*;
 public class Alfabeto extends Pictograma {
 	private static List<String> letras = new ArrayList<String>();
 	private String interpretacion;
-	public Alfabeto(String origen, String interpretacion) {
+	public Alfabeto(String origen, List<String> letras, String interpretacion) {
 		super(origen);
+		Alfabeto.letras = letras;
 		this.interpretacion = interpretacion;
 	}
 	public static int cantidadLetras() {
