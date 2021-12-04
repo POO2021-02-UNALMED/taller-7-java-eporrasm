@@ -17,7 +17,7 @@ public class Alfabeto extends Pictograma {
 		return interpretacion;
 	}
 	public String toString() {
-		return letras.toString().substring(1,letras.length-2);
+		return Arrays.toString(letras).substring(1,letras.length-2);
 	}
 	public static String[] getLetras() {
 		return letras;
