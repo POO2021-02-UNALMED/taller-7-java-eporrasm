@@ -17,12 +17,7 @@ public class Alfabeto extends Pictograma {
 		return interpretacion;
 	}
 	public String toString() {
-		StringBuilder alfabeto = new StringBuilder();
-		for (String letra: letras) {
-			alfabeto.append(letra+", ");
-		}
-		alfabeto.delete(alfabeto.length()-2, alfabeto.length()-1);
-		return alfabeto.toString();
+		return letras.toString().substring(1,letras.length-2);
 	}
 	public static String[] getLetras() {
 		return letras;
