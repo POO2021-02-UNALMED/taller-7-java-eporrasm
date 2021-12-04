@@ -35,7 +35,7 @@ public class TestToString {
 		if (alfabeto.toString().equals(comp)) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema en el metodo toString de la clase Alfabeto" + alfabeto.toString() + "a");
+		assertTrue(ok, "Hay un problema en el metodo toString de la clase Alfabeto");
     }
 	
 	@Test
@@ -49,7 +49,7 @@ public class TestToString {
 		if (fabula.toString().equals(comp)) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema en el metodo toString de la clase Fabula");
+		assertTrue(ok, "Hay un problema en el metodo toString de la clase Fabula\n" + fabula.toString());
     }
 	
 	@Test
