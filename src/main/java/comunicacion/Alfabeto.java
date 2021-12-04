@@ -3,15 +3,15 @@ package comunicacion;
 import java.util.*;
 
 public class Alfabeto extends Pictograma {
-	private static List<String> letras = new ArrayList<String>();
+	private static String[] letras;
 	private String interpretacion;
-	public Alfabeto(String origen, List<String> letras, String interpretacion) {
+	public Alfabeto(String origen, String[] letras, String interpretacion) {
 		super(origen);
 		Alfabeto.letras = letras;
 		this.interpretacion = interpretacion;
 	}
 	public static int cantidadLetras() {
-		return letras.size();
+		return letras.length;
 	}
 	public String interpretacion() {
 		return interpretacion;
@@ -24,10 +24,10 @@ public class Alfabeto extends Pictograma {
 		alfabeto.delete(alfabeto.length()-2, alfabeto.length()-1);
 		return alfabeto.toString();
 	}
-	public static List<String> getLetras() {
+	public static String[] getLetras() {
 		return letras;
 	}
-	public static void setLetras(List<String> letras) {
+	public static void setLetras(String[] letras) {
 		Alfabeto.letras = letras;
 	}
 	public String getInterpretacion() {
