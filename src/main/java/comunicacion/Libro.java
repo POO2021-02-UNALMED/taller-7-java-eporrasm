@@ -26,7 +26,7 @@ public class Libro extends Escrito {
 
 	@Override
 	public String toString() {
-		return String.format("$s\n$s\n$s\n$s\n$s\n$s\n$s", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), co_autor, editorial, edicion);
+		return String.format("%s\n%s\n%s\n%s\n%s\n%s\n%s", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), co_autor, editorial, edicion);
 	}
 
 	public String getCo_autor() {

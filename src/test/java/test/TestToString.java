@@ -49,7 +49,7 @@ public class TestToString {
 		if (fabula.toString().equals(comp)) {
 			ok = true;
 		}
-		assertTrue(ok, "Hay un problema en el metodo toString de la clase Fabula\n" + fabula.toString());
+		assertTrue(ok, "Hay un problema en el metodo toString de la clase Fabula");
     }
 	
 	@Test

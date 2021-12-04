@@ -30,7 +30,7 @@ public class Tesis extends Escrito {
 
 	@Override
 	public String toString() {
-		return String.format("$s\n$s\n$s\n$s\n$s\n$s\n$s\n$s", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), idea, argumentos.length, conclusion, referencias);
+		return String.format("%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), idea, argumentos.length, conclusion, referencias);
 	}
 
 	public String getIdea() {
